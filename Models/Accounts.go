@@ -3,6 +3,7 @@ package models
 import "fmt"
 
 type Accounts struct {
+	AccId string
 	Owner   Person
 	Balance int
 }
@@ -20,3 +21,5 @@ func (a Accounts) AccountInfo(){
 	"\nAge : ", a.Owner.Age,
 	"\nBalance: ",a.Balance)
 }
+
+
